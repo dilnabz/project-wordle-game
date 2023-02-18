@@ -1,0 +1,12 @@
+.gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
