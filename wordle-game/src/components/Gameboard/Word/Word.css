@@ -1,3 +1,9 @@
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .letter {
     display: flex;
     align-items: center;
