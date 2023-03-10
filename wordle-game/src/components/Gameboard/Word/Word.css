@@ -14,5 +14,21 @@
     padding: 5px;
     margin: 2px;
     font-size: 22px;
-    font-weight: 700px;
+    font-weight: bold;
+}
+
+.grey {
+    background-color: #a1a1a1;
+    border-color: #a1a1a1;
+}
+
+.yellow {
+    background-color: #e2cc68;
+    border-color: #e2cc68;
+}
+
+
+.green {
+    background-color: #5ac85a;
+    border-color: #5ac85a;
 }

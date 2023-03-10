@@ -11,3 +11,36 @@
     align-items: center;
     justify-content: center;
 }
+
+.key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+    font-size: 22px;
+    font-weight: 700px;
+}
+
+.enter {
+    width: 100px;
+}
+
+.green{
+    background: #5ac85a;
+    color: #fff;
+}
+
+.yellow{
+    background: #e2cc68;
+    color: #fff;
+}
+
+.grey{
+    background: #a1a1a1;
+    color: #fff;
+}
