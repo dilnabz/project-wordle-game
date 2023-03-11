@@ -1,4 +1,3 @@
-import React from "react";
 import { makeColor } from "../../makeColor";
 
 export const keyColors = (words, hiddenWord) => {
