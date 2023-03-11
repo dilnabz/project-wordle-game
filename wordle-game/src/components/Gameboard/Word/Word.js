@@ -1,19 +1,20 @@
 import React from "react";
 import "./Word.css";
 
-export function Word({ 
-    word, 
-    enterWord 
+export function Word({  
+    enterWord,
+    wordColors,
+    word
 }) {
     if (word) {
         return (
             <div className="word">
-                {word.map((letter, i) => {
+                {word.split("").map((letter, i) => {
                     return( 
                         <div 
                             key={i} 
-                            className={`letter ${letter.color}`}>
-                            {letter.key}
+                            className={`letter ${wordColors[i]}`}>
+                            {letter}
                         </div>
                         )
                 })}
@@ -23,21 +24,21 @@ export function Word({
 
     if (enterWord) {
         let letters = enterWord.split('');
+
+        function makeCells() {
+            const cells = Array(5).fill(<div className="letter"></div>);
+
+            if (letters.length > 0) {
+                letters.forEach((letter, i) => {
+                    cells[i] = <div className="letter">{letter}</div>
+                })
+            }
+
+            return cells;
+        }
         return (
             <div className="word">
-                {letters.map((letter, i) => {
-                    return (<div 
-                                key={i} 
-                                className="letter">
-                                {letter}
-                            </div>)
-                })}
-                {[...Array(5-letters.length)].map((_, i) => {
-                    return (<div 
-                                key={i} 
-                                className="letter">
-                            </div>)
-                })}
+                {makeCells()}
             </div>
         )
     }
